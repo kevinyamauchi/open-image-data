@@ -3,6 +3,19 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
+parts:
+  # Tutorials section
+  - caption: Tutorials
+    chapters:
+    - file: tutorials/tutorials_intro
+    - file: tutorials/cryo_em/cryo_em_tutorial_intro
+      sections:
+      - file: tutorials/cryo_em/cryo_em_installation
+
+  # Explanations section
+  - caption: Explanations
+    chapters:
+    - file: explanations/explanations_intro
+    - file: explanations/open_research_data/open_research_data_intro
+
+
