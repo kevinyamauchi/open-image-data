@@ -14,3 +14,5 @@ Currently this document is mostly a collection of thoughts. As more content is a
 ## Related books and resources
 - **[Introduction to Bioimage Analysis](https://bioimagebook.github.io/README.html) by Pete Bankhead**. An amazing reference with clear techincal content and figures to illustrate the fundamental concepts in image processing.
 - **[Bio-image Analysis with Python](https://github.com/BiAPoL/Bio-image_Analysis_with_Python) by Anna Poetsch, Biotec Dresden, Marcelo Leomil Zoccoler, Johannes Richard Müller and Robert Haase**. A well-made course on how to perform key bioimage analysis and data science tasks in python.
+- **[BiA-PoL blog](https://biapol.github.io/blog/) by the Bio-image Analysis Technology Development group**. A collection of blog posts with helpful tips for bioimage analysis and data science.
+- **[Image Analysis Training Resources](https://neubias.github.io/training-resources/) by NEUBIAS**. Training materials for teaching/learning image processing on a variety of platforms (e.g., ImageJ/FIJI, python, and MATLAB)
