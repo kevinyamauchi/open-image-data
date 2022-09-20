@@ -92,7 +92,7 @@ In this tutorial, we will install python via mambaforge, a distribution of anaco
 
 ```{tab-item} Windows
 1. Find the file you downloaded (Mambaforge-Windows-x86_64.exe) and double click to execute it. Follow the instructions to complete the installation.
-2. Once the installation has completed, you can verify it was correctly installed by searching for the "miniforge prompt" in your Start menu.
+2. Once the installation has completed, you can verify it was correctly installed by searching for the "mambaforge prompt" in your Start menu.
 ```
 ````
 
@@ -103,36 +103,38 @@ The following assumes that you have installed python using Mambaforge as [descri
 
 ```
 
+1. Download the environment file. This contains all of the libraries required for the tutorial and we will use it to set up our conda environment. To download, right click and "Save as" [this link](https://github.com/kevinyamauchi/cryoem-napari-tutorial/raw/main/environment.yaml). Take note of the path to where you downloaded the file.
 1. Open your terminal.
     - **Linux**: Open your terminal application
     - **Mac OS**: Open Terminal (you can search for it in spotlight - cmd + space)
-    - **Windows**: Open the "miniforge prompt" from your start menu
+    - **Windows**: Open the "manbaforge prompt" or "miniforge prompt" from your start menu
 
-2. We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named `napari-tutorial`), enter the following command.
+2. We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named `cryoem-napari`) from the environment file you downloaded in the first step, enter the following command. Replace `path/to/environment.yaml` with the path to the `environment.yaml` file you downloaded in the first step. You can also drag and drop the `environment.yaml` file into your terminal window to get the path.
 
 	```bash
-	mamba create -n cryoem-napari python=3.9
+	mamba env create -f path/to/environment.yaml
 	```
 
-3. Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see `(napari-tutorial)` to the left of your command prompt.
+3. Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see `(cryoem-napari)` to the left of your command prompt.
 
 	```bash
 	mamba activate cryoem-napari
 	```
 
-4. Install the dependencies with the commands below
-
-	```bash
-	mamba install -c conda-forge notebook napari
-	pip install cookiecutter magicgui
-	pip install stardist-napari
-	```
-
-5. If you are on a Mac, please install this one additional dependency.
+5. If you are on a Mac or linux, please install these additional dependencies.
+    ````{tab-set}
+    ```{tab-item} Linux
 
 	```python
-	mamba install -c conda-forge python.app
+	mamba install -c conda-forge ocl-icd-system
 	```
+
+    ```{tab-item} Mac OS
+	```python
+	mamba install -c conda-forge python.app ocl_icd_wrapper_apple
+	```
+
+    ````
 
 6. Test that your notebook installation is working. We will be using notebook for interactive analysis. Enter the command below and it should launch jupyter notebook book in a web browser. Once you've confirmed it launches, close the web browser and press ctrl+c in the terminal window to stop the notebook server.
 
