@@ -1,21 +1,16 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
 root: intro
 parts:
-  # Tutorials section
   - caption: Tutorials
     chapters:
     - file: tutorials/tutorials_intro
-    - file: tutorials/cryo_em/cryo_em_tutorial_intro
+    - file: tutorials/em/cryo_em_tutorial_intro
       sections:
-      - file: tutorials/cryo_em/cryo_em_installation
-
-  # Explanations section
+      - file: tutorials/em/cryo_em_installation
+      - file: tutorials/em/notebook_setup
   - caption: Explanations
     chapters:
     - file: explanations/explanations_intro
     - file: explanations/open_research_data/open_research_data_intro
-
-
