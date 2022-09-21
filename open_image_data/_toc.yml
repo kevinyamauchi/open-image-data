@@ -6,9 +6,9 @@ parts:
   - caption: Tutorials
     chapters:
     - file: tutorials/tutorials_intro
-    - file: tutorials/em/cryo_em_tutorial_intro
+    - file: tutorials/em/em_tutorial_intro
       sections:
-      - file: tutorials/em/cryo_em_installation
+      - file: tutorials/em/em_installation
       - file: tutorials/em/notebook_setup
   - caption: Explanations
     chapters:
