@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Explanations introduction" href="../../explanations/explanations_intro.html" />
-    <link rel="prev" title="CryoEM analysis tutorial" href="cryo_em_tutorial_intro.html" />
+    <link rel="next" title="Downloading and launching the notebooks" href="notebook_setup.html" />
+    <link rel="prev" title="EM analysis tutorial" href="cryo_em_tutorial_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -126,7 +126,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="cryo_em_tutorial_intro.html">
-   CryoEM analysis tutorial
+   EM analysis tutorial
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -137,6 +137,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Setting up your python environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="notebook_setup.html">
+     Downloading and launching the notebooks
     </a>
    </li>
   </ul>
@@ -248,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/cryo_em/cryo_em_installation.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/em/cryo_em_installation.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -276,7 +281,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/tutorials/cryo_em/cryo_em_installation.md"
+        <a href="../../_sources/tutorials/em/cryo_em_installation.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -387,11 +392,11 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="setting-up-your-python-environment">
 <h1>Setting up your python environment<a class="headerlink" href="#setting-up-your-python-environment" title="Permalink to this headline">#</a></h1>
 <section id="installing-python-via-mambaforge">
-<span id="content-references-cryoem-python-installation"></span><h2>Installing python via mambaforge<a class="headerlink" href="#installing-python-via-mambaforge" title="Permalink to this headline">#</a></h2>
+<span id="content-references-em-python-installation"></span><h2>Installing python via mambaforge<a class="headerlink" href="#installing-python-via-mambaforge" title="Permalink to this headline">#</a></h2>
 <p>In this tutorial, we will install python via mambaforge, a distribution of anaconda python. However, if you already have anaconda, miniconda, mambaforge, or miniforge installed, those will work as well and you can skip to the next section.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="0dd744c0-a70e-4b12-b531-df2b407fadaa" name="a3c69c06-eae4-45a0-8f12-df0a86f11638" type="radio">
-</input><label class="sd-tab-label" for="0dd744c0-a70e-4b12-b531-df2b407fadaa">
+<input checked="checked" id="e1bfa392-a9ba-40c8-80ae-ff724833cbf4" name="c802f5b4-7e41-499b-89e9-f71aa42bde93" type="radio">
+</input><label class="sd-tab-label" for="e1bfa392-a9ba-40c8-80ae-ff724833cbf4">
 Linux</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -419,8 +424,8 @@ Linux</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="4fd2e967-4ce3-4bc3-b2e7-71d53b2a3b7f" name="a3c69c06-eae4-45a0-8f12-df0a86f11638" type="radio">
-</input><label class="sd-tab-label" for="4fd2e967-4ce3-4bc3-b2e7-71d53b2a3b7f">
+<input id="8d8b5bf6-f588-447b-a15b-aaa03c9e5abe" name="c802f5b4-7e41-499b-89e9-f71aa42bde93" type="radio">
+</input><label class="sd-tab-label" for="8d8b5bf6-f588-447b-a15b-aaa03c9e5abe">
 Mac OS (Intel)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -448,8 +453,8 @@ Mac OS (Intel)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="0c8635df-6e73-4405-a439-a5a9d187af9e" name="a3c69c06-eae4-45a0-8f12-df0a86f11638" type="radio">
-</input><label class="sd-tab-label" for="0c8635df-6e73-4405-a439-a5a9d187af9e">
+<input id="cd43b5a2-5a2e-4894-921a-1f8831e31a80" name="c802f5b4-7e41-499b-89e9-f71aa42bde93" type="radio">
+</input><label class="sd-tab-label" for="cd43b5a2-5a2e-4894-921a-1f8831e31a80">
 Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -477,8 +482,8 @@ Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="fb6d5d38-a5d4-456b-a0b3-9864e323d8dc" name="a3c69c06-eae4-45a0-8f12-df0a86f11638" type="radio">
-</input><label class="sd-tab-label" for="fb6d5d38-a5d4-456b-a0b3-9864e323d8dc">
+<input id="319379fb-dde1-4974-b4ad-47ca41ea564f" name="c802f5b4-7e41-499b-89e9-f71aa42bde93" type="radio">
+</input><label class="sd-tab-label" for="319379fb-dde1-4974-b4ad-47ca41ea564f">
 Windows</label><div class="sd-tab-content docutils">
 <ol class="simple">
 <li><p>Find the file you downloaded (Mambaforge-Windows-x86_64.exe) and double click to execute it. Follow the instructions to complete the installation.</p></li>
@@ -491,10 +496,10 @@ Windows</label><div class="sd-tab-content docutils">
 <h2>Setting up your environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">#</a></h2>
 <div class="admonition-using-conda-instead-of-mamba admonition">
 <p class="admonition-title">Using conda instead of mamba?</p>
-<p>The following assumes that you have installed python using Mambaforge as <a class="reference internal" href="#content-references-cryoem-python-installation"><span class="std std-ref">described above</span></a>. If you are using a pre-existing installation of python via anaconda, miniconda, or miniforge, you can simply replace the <code class="docutils literal notranslate"><span class="pre">mamba</span></code> commands with <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
+<p>The following assumes that you have installed python using Mambaforge as <a class="reference internal" href="#content-references-em-python-installation"><span class="std std-ref">described above</span></a>. If you are using a pre-existing installation of python via anaconda, miniconda, or miniforge, you can simply replace the <code class="docutils literal notranslate"><span class="pre">mamba</span></code> commands with <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
 </div>
 <ol>
-<li><p>Download the environment file. This contains all of the libraries required for the tutorial and we will use it to set up our conda environment. To download, right click and “Save as” <a class="reference external" href="https://github.com/kevinyamauchi/cryoem-napari-tutorial/raw/main/environment.yaml">this link</a>. Take note of the path to where you downloaded the file.</p></li>
+<li><p>Download the environment file. This contains all of the libraries required for the tutorial and we will use it to set up our conda environment. To download, right click and “Save as” <a class="reference external" href="https://github.com/kevinyamauchi/em-napari-tutorial/raw/main/environment.yaml">this link</a>. Take note of the path to where you downloaded the file.</p></li>
 <li><p>Open your terminal.</p>
 <ul class="simple">
 <li><p><strong>Linux</strong>: Open your terminal application</p></li>
@@ -502,27 +507,27 @@ Windows</label><div class="sd-tab-content docutils">
 <li><p><strong>Windows</strong>: Open the “manbaforge prompt” or “miniforge prompt” from your start menu</p></li>
 </ul>
 </li>
-<li><p>We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named <code class="docutils literal notranslate"><span class="pre">cryoem-napari</span></code>) from the environment file you downloaded in the first step, enter the following command. Replace <code class="docutils literal notranslate"><span class="pre">path/to/environment.yaml</span></code> with the path to the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file you downloaded in the first step. You can also drag and drop the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file into your terminal window to get the path.</p>
+<li><p>We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named <code class="docutils literal notranslate"><span class="pre">em-napari</span></code>) from the environment file you downloaded in the first step, enter the following command. Replace <code class="docutils literal notranslate"><span class="pre">path/to/environment.yaml</span></code> with the path to the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file you downloaded in the first step. You can also drag and drop the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file into your terminal window to get the path.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba env create -f path/to/environment.yaml
 </pre></div>
 </div>
 </li>
-<li><p>Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see <code class="docutils literal notranslate"><span class="pre">(cryoem-napari)</span></code> to the left of your command prompt.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba activate cryoem-napari
+<li><p>Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see <code class="docutils literal notranslate"><span class="pre">(em-napari)</span></code> to the left of your command prompt.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba activate em-napari
 </pre></div>
 </div>
 </li>
 <li><p>If you are on a Mac or linux, please install these additional dependencies.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="149fc5c4-7c16-4303-a75e-57c856032263" name="915b0f12-4db5-4c5d-94a7-5f1adac81469" type="radio">
-</input><label class="sd-tab-label" for="149fc5c4-7c16-4303-a75e-57c856032263">
+<input checked="checked" id="d6221b2f-0522-47b0-b7ca-efd7e5ae37af" name="6ee9fcab-70c8-468b-8f26-c011760405b7" type="radio">
+</input><label class="sd-tab-label" for="d6221b2f-0522-47b0-b7ca-efd7e5ae37af">
 Linux</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">ocl</span><span class="o">-</span><span class="n">icd</span><span class="o">-</span><span class="n">system</span>
 </pre></div>
 </div>
 </div>
-<input id="f9b73efe-0b06-4d50-90e3-447d53c6fb25" name="915b0f12-4db5-4c5d-94a7-5f1adac81469" type="radio">
-</input><label class="sd-tab-label" for="f9b73efe-0b06-4d50-90e3-447d53c6fb25">
+<input id="7b0cbd5f-58be-4cd1-bbc9-0a5201f4250b" name="6ee9fcab-70c8-468b-8f26-c011760405b7" type="radio">
+</input><label class="sd-tab-label" for="7b0cbd5f-58be-4cd1-bbc9-0a5201f4250b">
 Mac OS</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">.</span><span class="n">app</span> <span class="n">ocl_icd_wrapper_apple</span>
 </pre></div>
@@ -565,7 +570,7 @@ Mac OS</label><div class="sd-tab-content docutils">
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./tutorials/cryo_em"
+            path: "./tutorials/em"
         },
         predefinedOutput: true
     }
@@ -583,13 +588,13 @@ Mac OS</label><div class="sd-tab-content docutils">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">CryoEM analysis tutorial</p>
+            <p class="prev-next-title">EM analysis tutorial</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../explanations/explanations_intro.html" title="next page">
+    <a class='right-next' id="next-link" href="notebook_setup.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Explanations introduction</p>
+        <p class="prev-next-title">Downloading and launching the notebooks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

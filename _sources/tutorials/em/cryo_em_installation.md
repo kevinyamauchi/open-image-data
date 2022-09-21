@@ -1,6 +1,6 @@
 # Setting up your python environment
 
-(content:references:cryoem_python_installation)=
+(content:references:em_python_installation)=
 ## Installing python via mambaforge
 
 In this tutorial, we will install python via mambaforge, a distribution of anaconda python. However, if you already have anaconda, miniconda, mambaforge, or miniforge installed, those will work as well and you can skip to the next section.
@@ -99,26 +99,26 @@ In this tutorial, we will install python via mambaforge, a distribution of anaco
 ## Setting up your environment
 
 ```{admonition} Using conda instead of mamba?
-The following assumes that you have installed python using Mambaforge as [described above](content:references:cryoem_python_installation). If you are using a pre-existing installation of python via anaconda, miniconda, or miniforge, you can simply replace the `mamba` commands with `conda`.
+The following assumes that you have installed python using Mambaforge as [described above](content:references:em_python_installation). If you are using a pre-existing installation of python via anaconda, miniconda, or miniforge, you can simply replace the `mamba` commands with `conda`.
 
 ```
 
-1. Download the environment file. This contains all of the libraries required for the tutorial and we will use it to set up our conda environment. To download, right click and "Save as" [this link](https://github.com/kevinyamauchi/cryoem-napari-tutorial/raw/main/environment.yaml). Take note of the path to where you downloaded the file.
+1. Download the environment file. This contains all of the libraries required for the tutorial and we will use it to set up our conda environment. To download, right click and "Save as" [this link](https://github.com/kevinyamauchi/em-napari-tutorial/raw/main/environment.yaml). Take note of the path to where you downloaded the file.
 1. Open your terminal.
     - **Linux**: Open your terminal application
     - **Mac OS**: Open Terminal (you can search for it in spotlight - cmd + space)
     - **Windows**: Open the "manbaforge prompt" or "miniforge prompt" from your start menu
 
-2. We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named `cryoem-napari`) from the environment file you downloaded in the first step, enter the following command. Replace `path/to/environment.yaml` with the path to the `environment.yaml` file you downloaded in the first step. You can also drag and drop the `environment.yaml` file into your terminal window to get the path.
+2. We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named `em-napari`) from the environment file you downloaded in the first step, enter the following command. Replace `path/to/environment.yaml` with the path to the `environment.yaml` file you downloaded in the first step. You can also drag and drop the `environment.yaml` file into your terminal window to get the path.
 
 	```bash
 	mamba env create -f path/to/environment.yaml
 	```
 
-3. Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see `(cryoem-napari)` to the left of your command prompt.
+3. Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see `(em-napari)` to the left of your command prompt.
 
 	```bash
-	mamba activate cryoem-napari
+	mamba activate em-napari
 	```
 
 5. If you are on a Mac or linux, please install these additional dependencies.

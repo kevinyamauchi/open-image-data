@@ -21,4 +21,5 @@ Currently this document is mostly a collection of thoughts. As more content is a
 
 
 ### Data science
-- **[The Turing Way](https://the-turing-way.netlify.app/welcome.html)** by the Turing Way Community. A comprehensive guide for reproducible data science in research starting from project design through communication of results.
+- **[The Turing Way](https://the-turing-way.netlify.app/welcome.html) by the Turing Way Community**. A comprehensive guide for reproducible data science in research starting from project design through communication of results.
+- **[UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/) by Phillip Lippe**. A series of notesbooks giving practical explanations of deep learning concepts with exercises implemented as Google Collab notebooks.

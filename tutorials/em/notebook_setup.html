@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>CryoEM analysis tutorial &#8212; Open Image Data Handbook</title>
+    <title>Downloading and launching the notebooks &#8212; Open Image Data Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Setting up your python environment" href="cryo_em_installation.html" />
-    <link rel="prev" title="Tutorials introduction" href="../tutorials_intro.html" />
+    <link rel="next" title="Explanations introduction" href="../../explanations/explanations_intro.html" />
+    <link rel="prev" title="Setting up your python environment" href="cryo_em_installation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -125,18 +125,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   CryoEM analysis tutorial
+  <a class="reference internal" href="cryo_em_tutorial_intro.html">
+   EM analysis tutorial
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="cryo_em_installation.html">
      Setting up your python environment
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Downloading and launching the notebooks
     </a>
    </li>
   </ul>
@@ -248,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/cryo_em/cryo_em_tutorial_intro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/em/notebook_setup.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -276,7 +281,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/tutorials/cryo_em/cryo_em_tutorial_intro.md"
+        <a href="../../_sources/tutorials/em/notebook_setup.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -313,23 +318,94 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-the-notebooks">
+   Downloading the notebooks.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#downloading-zip">
+     Downloading .zip
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloning-via-git">
+     Cloning via git
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launch-jupyter-notebook">
+   Launch jupyter notebook
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CryoEM analysis tutorial</h1>
+                <h1>Downloading and launching the notebooks</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-the-notebooks">
+   Downloading the notebooks.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#downloading-zip">
+     Downloading .zip
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloning-via-git">
+     Cloning via git
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launch-jupyter-notebook">
+   Launch jupyter notebook
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -337,11 +413,56 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="cryoem-analysis-tutorial">
-<h1>CryoEM analysis tutorial<a class="headerlink" href="#cryoem-analysis-tutorial" title="Permalink to this headline">#</a></h1>
-<p>This tutorial shows how to perform and analyze image segmentations in volume CryoEM data.</p>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="downloading-and-launching-the-notebooks">
+<h1>Downloading and launching the notebooks<a class="headerlink" href="#downloading-and-launching-the-notebooks" title="Permalink to this headline">#</a></h1>
+<section id="downloading-the-notebooks">
+<h2>Downloading the notebooks.<a class="headerlink" href="#downloading-the-notebooks" title="Permalink to this headline">#</a></h2>
+<p>During this tutorial, we will be working through a set of notebooks. On this page, we will download the notebooks and launch jupyter notebook. There are two ways to download the notebooks: download as a .zip from github. Follow the instructions below for either “downloading zip” (recommended for beginners) or “cloning via git”.</p>
+<section id="downloading-zip">
+<h3>Downloading .zip<a class="headerlink" href="#downloading-zip" title="Permalink to this headline">#</a></h3>
+<p>You can download the notebooks as a .zip file. To do so, please do the following:</p>
+<ol class="simple">
+<li><p>Navigate your web browser to <a class="reference external" href="https://github.com/kevinyamauchi/em-napari-tutorial">https://github.com/kevinyamauchi/em-napari-tutorial</a></p></li>
+<li><p>Click the green “Code” button to open the download menu and then “Download ZIP”
+<img alt="download code" src="../../_images/download_code.png" /></p></li>
+<li><p>Choose the location you would like to download the .zip.</p></li>
+<li><p>Open your file browser and double click on the .zip file to uncompress it.</p></li>
+<li><p>You have downloaded the notebooks! Proceed to the “Launching jupyter notebook” section.</p></li>
+</ol>
+</section>
+<section id="cloning-via-git">
+<h3>Cloning via git<a class="headerlink" href="#cloning-via-git" title="Permalink to this headline">#</a></h3>
+<p>To perform this tutorial, we first need to download the notebook. To do so, please clone the repository containing the tutorial materials to your computer. We recommend cloning the materials into your Documents folder, but you can choose another suitable location. First, open your Terminal navigate to you the folder you will download the course materials into</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Documents
+</pre></div>
 </div>
+<p>and then clone the repository. This will download all of the files necessary for this tutorial.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/kevinyamauchi/em-napari-tutorial.git
+</pre></div>
+</div>
+</section>
+</section>
+<section id="launch-jupyter-notebook">
+<h2>Launch jupyter notebook<a class="headerlink" href="#launch-jupyter-notebook" title="Permalink to this headline">#</a></h2>
+<p>Open your terminal and navigate to the <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> subdirectory of the <code class="docutils literal notranslate"><span class="pre">em-napari-tutorial</span></code> directory you just downloaded.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">em</span><span class="o">-</span><span class="n">napari</span><span class="o">-</span><span class="n">tutorial</span><span class="o">&gt;/</span><span class="n">notebooks</span>
+</pre></div>
+</div>
+<p>Now activate your <code class="docutils literal notranslate"><span class="pre">em-napari</span></code> conda environment you created in the installation step.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">em</span><span class="o">-</span><span class="n">napari</span>
+</pre></div>
+</div>
+<p>We will perform the analysis using Jupyter Notebook. To start Jupyter Notebook, enter</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook
+</pre></div>
+</div>
+<p>Jupyter Notebook will open in a browser window and you will see the following notebooks:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">part_0_viewer_intro.ipynb</span></code>: in this activity, you will gain familiarity with loading and viewing images in napari.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">part_1_segmenting_and_measuring_mitochondria.ipynb</span></code>: in this notebook, you will use <code class="docutils literal notranslate"><span class="pre">empanada</span></code> to segment mitochondria and <code class="docutils literal notranslate"><span class="pre">napari-clusters-plotter</span> <span class="pre">to</span> <span class="pre">measure</span></code> them.</p></li>
+</ul>
+<p><img alt="jupyter notebook" src="../../_images/jupyter_notebook.png" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -357,7 +478,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./tutorials/cryo_em"
+            path: "./tutorials/em"
         },
         predefinedOutput: true
     }
@@ -371,17 +492,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../tutorials_intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="cryo_em_installation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tutorials introduction</p>
+            <p class="prev-next-title">Setting up your python environment</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="cryo_em_installation.html" title="next page">
+    <a class='right-next' id="next-link" href="../../explanations/explanations_intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Setting up your python environment</p>
+        <p class="prev-next-title">Explanations introduction</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
