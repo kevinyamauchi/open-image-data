@@ -164,6 +164,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How-tos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../how_tos/how_tos_introduction.html">
+   How-tos introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../how_tos/conda_forge_packaging.html">
+   Making your package available on conda-forge
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav></div>
@@ -395,8 +412,8 @@ title="Print to PDF"
 <span id="content-references-em-python-installation"></span><h2>Installing python via mambaforge<a class="headerlink" href="#installing-python-via-mambaforge" title="Permalink to this headline">#</a></h2>
 <p>In this tutorial, we will install python via mambaforge, a distribution of anaconda python. However, if you already have anaconda, miniconda, mambaforge, or miniforge installed, those will work as well and you can skip to the next section.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="936e8528-a03a-43e2-969f-50a076a264af" name="b8b66ad3-227d-4131-8524-5556d2a24669" type="radio">
-</input><label class="sd-tab-label" for="936e8528-a03a-43e2-969f-50a076a264af">
+<input checked="checked" id="207fa083-a71c-4a67-988a-2ec9473497c8" name="226d30f5-7485-4c1c-9916-33841697df87" type="radio">
+</input><label class="sd-tab-label" for="207fa083-a71c-4a67-988a-2ec9473497c8">
 Linux</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -424,8 +441,8 @@ Linux</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="e68d88c7-d2d3-49e0-8c4e-7eb2833e4936" name="b8b66ad3-227d-4131-8524-5556d2a24669" type="radio">
-</input><label class="sd-tab-label" for="e68d88c7-d2d3-49e0-8c4e-7eb2833e4936">
+<input id="1ac59f24-4402-4e37-9ad0-f79c12b97060" name="226d30f5-7485-4c1c-9916-33841697df87" type="radio">
+</input><label class="sd-tab-label" for="1ac59f24-4402-4e37-9ad0-f79c12b97060">
 Mac OS (Intel)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -453,8 +470,8 @@ Mac OS (Intel)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="9f388da8-514f-40be-9ebf-a5701e30c81e" name="b8b66ad3-227d-4131-8524-5556d2a24669" type="radio">
-</input><label class="sd-tab-label" for="9f388da8-514f-40be-9ebf-a5701e30c81e">
+<input id="72fa4e78-2755-4759-9f7e-5f29fefee4cf" name="226d30f5-7485-4c1c-9916-33841697df87" type="radio">
+</input><label class="sd-tab-label" for="72fa4e78-2755-4759-9f7e-5f29fefee4cf">
 Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -482,8 +499,8 @@ Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="273e206d-40ab-4bf2-a5ae-9154e451fac0" name="b8b66ad3-227d-4131-8524-5556d2a24669" type="radio">
-</input><label class="sd-tab-label" for="273e206d-40ab-4bf2-a5ae-9154e451fac0">
+<input id="8618c30f-e046-407b-874c-c577da3a3a52" name="226d30f5-7485-4c1c-9916-33841697df87" type="radio">
+</input><label class="sd-tab-label" for="8618c30f-e046-407b-874c-c577da3a3a52">
 Windows</label><div class="sd-tab-content docutils">
 <ol class="simple">
 <li><p>Find the file you downloaded (Mambaforge-Windows-x86_64.exe) and double click to execute it. Follow the instructions to complete the installation.</p></li>
@@ -519,15 +536,15 @@ Windows</label><div class="sd-tab-content docutils">
 </li>
 <li><p>If you are on a Mac or linux, please install these additional dependencies.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="7141f5f6-aff1-48bc-8650-71e7c4819e0d" name="414c8d55-e2cd-4d12-9709-221752f2278a" type="radio">
-</input><label class="sd-tab-label" for="7141f5f6-aff1-48bc-8650-71e7c4819e0d">
+<input checked="checked" id="54a03272-855b-4ac0-9a61-8ed3b81c6b19" name="4cd97856-2a20-4665-b511-7627db4d3976" type="radio">
+</input><label class="sd-tab-label" for="54a03272-855b-4ac0-9a61-8ed3b81c6b19">
 Linux</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">ocl</span><span class="o">-</span><span class="n">icd</span><span class="o">-</span><span class="n">system</span>
 </pre></div>
 </div>
 </div>
-<input id="647d1040-b32b-46d1-958f-afac9e267c59" name="414c8d55-e2cd-4d12-9709-221752f2278a" type="radio">
-</input><label class="sd-tab-label" for="647d1040-b32b-46d1-958f-afac9e267c59">
+<input id="2d958bf5-6be1-4a2c-9bfb-fe52145b40e3" name="4cd97856-2a20-4665-b511-7627db4d3976" type="radio">
+</input><label class="sd-tab-label" for="2d958bf5-6be1-4a2c-9bfb-fe52145b40e3">
 Mac OS</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">.</span><span class="n">app</span> <span class="n">ocl_icd_wrapper_apple</span>
 </pre></div>
