@@ -4,6 +4,10 @@ A handbook on producing and using open image data and analysis pipelines.
 
 ## Usage
 
+### Viewing the book
+
+If you would like to view the rendered book, do so here: https://kevinyamauchi.github.io/open-image-data/intro.html
+
 ### Building the book
 
 If you'd like to develop and/or build the Open Image Data Handbook book, you should:
