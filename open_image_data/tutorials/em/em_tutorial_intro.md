@@ -15,7 +15,7 @@ The aim of this workshop is to provide an introduction to bioimage analysis in P
 
 So that we can best utilize our time together, please do the following before arriving at the tutorial:
 
-1. Install napari and dependencies. Instructions [here](./cryo_em_installation.md).
+1. Install napari and dependencies. Instructions [here](./em_installation.md).
 2. Download the notebooks and launch jupyter notebook. Instructions [here](./notebook_setup.md).
 
 ## Tutorial instructions
