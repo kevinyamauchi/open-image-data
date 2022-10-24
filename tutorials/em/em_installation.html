@@ -176,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../how_tos/install_python.html">
+   Install python
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../how_tos/conda_forge_packaging.html">
    Making your package available on conda-forge
   </a>
@@ -411,103 +416,7 @@ title="Print to PDF"
 <section id="installing-python-via-mambaforge">
 <span id="content-references-em-python-installation"></span><h2>Installing python via mambaforge<a class="headerlink" href="#installing-python-via-mambaforge" title="Permalink to this headline">#</a></h2>
 <p>In this tutorial, we will install python via mambaforge, a distribution of anaconda python. However, if you already have anaconda, miniconda, mambaforge, or miniforge installed, those will work as well and you can skip to the next section.</p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="4fb6bb9c-25a1-4b3e-bf84-2c56a842e7b1" name="d54f157a-0ad9-41f3-985f-2f88856b010d" type="radio">
-</input><label class="sd-tab-label" for="4fb6bb9c-25a1-4b3e-bf84-2c56a842e7b1">
-Linux</label><div class="sd-tab-content docutils">
-<ol>
-<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
-<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-Linux-x86_64</span></code>.</p></li>
-<li><p>Open your terminal application</p></li>
-<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
-</pre></div>
-</div>
-</li>
-<li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-Linux-x86_64.sh
-</pre></div>
-</div>
-</li>
-<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
-<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
-<div class="admonition-don-t-see-base admonition">
-<p class="admonition-title">Don’t see (base)?</p>
-<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
-</pre></div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<input id="64679b87-14cb-4b26-8112-fc6b1e632eee" name="d54f157a-0ad9-41f3-985f-2f88856b010d" type="radio">
-</input><label class="sd-tab-label" for="64679b87-14cb-4b26-8112-fc6b1e632eee">
-Mac OS (Intel)</label><div class="sd-tab-content docutils">
-<ol>
-<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
-<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-x86_64</span></code>.</p></li>
-<li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
-<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
-</pre></div>
-</div>
-</li>
-<li><p>Execute the installer with the command below.  You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-x86_64.sh
-</pre></div>
-</div>
-</li>
-<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
-<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
-<div class="admonition-don-t-see-base admonition">
-<p class="admonition-title">Don’t see (base)?</p>
-<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
-</pre></div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<input id="6036b0f0-db9f-446f-b064-0ab50a967005" name="d54f157a-0ad9-41f3-985f-2f88856b010d" type="radio">
-</input><label class="sd-tab-label" for="6036b0f0-db9f-446f-b064-0ab50a967005">
-Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
-<ol>
-<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
-<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-arm64</span></code>.</p></li>
-<li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
-<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
-</pre></div>
-</div>
-</li>
-<li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read it/agree to it.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-arm64.sh
-</pre></div>
-</div>
-</li>
-<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
-<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
-<div class="admonition-don-t-see-base admonition">
-<p class="admonition-title">Don’t see (base)?</p>
-<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
-</pre></div>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<input id="b699fd10-261c-4bf4-9612-e26ece922a7b" name="d54f157a-0ad9-41f3-985f-2f88856b010d" type="radio">
-</input><label class="sd-tab-label" for="b699fd10-261c-4bf4-9612-e26ece922a7b">
-Windows</label><div class="sd-tab-content docutils">
-<ol class="simple">
-<li><p>Find the file you downloaded (Mambaforge-Windows-x86_64.exe) and double click to execute it. Follow the instructions to complete the installation.</p></li>
-<li><p>Once the installation has completed, you can verify it was correctly installed by searching for the “mambaforge prompt” in your Start menu.</p></li>
-</ol>
-</div>
-</div>
+<p>To install python via mambaforge, follow the instructions <a class="reference internal" href="../../how_tos/install_python.html"><span class="doc std std-doc">here</span></a>.</p>
 </section>
 <section id="setting-up-your-environment">
 <h2>Setting up your environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">#</a></h2>
@@ -536,15 +445,15 @@ Windows</label><div class="sd-tab-content docutils">
 </li>
 <li><p>If you are on a Mac or linux, please install these additional dependencies.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="e1bb03e1-dc3a-4c78-b88d-8227165d835a" name="0f40aa11-f569-4b93-8483-d126f162da2d" type="radio">
-</input><label class="sd-tab-label" for="e1bb03e1-dc3a-4c78-b88d-8227165d835a">
+<input checked="checked" id="556583f6-5136-485d-bb84-9b8515749414" name="a2216ce1-ee2d-4b4d-b609-c8d281990635" type="radio">
+</input><label class="sd-tab-label" for="556583f6-5136-485d-bb84-9b8515749414">
 Linux</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">ocl</span><span class="o">-</span><span class="n">icd</span><span class="o">-</span><span class="n">system</span>
 </pre></div>
 </div>
 </div>
-<input id="1e30308d-d55c-4893-b188-83ce832b461d" name="0f40aa11-f569-4b93-8483-d126f162da2d" type="radio">
-</input><label class="sd-tab-label" for="1e30308d-d55c-4893-b188-83ce832b461d">
+<input id="b0e555b1-dce4-46a5-bc7a-4e8f3c22dc10" name="a2216ce1-ee2d-4b4d-b609-c8d281990635" type="radio">
+</input><label class="sd-tab-label" for="b0e555b1-dce4-46a5-bc7a-4e8f3c22dc10">
 Mac OS</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">.</span><span class="n">app</span> <span class="n">ocl_icd_wrapper_apple</span>
 </pre></div>

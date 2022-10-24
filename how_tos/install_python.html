@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>How-tos introduction &#8212; Open Image Data Handbook</title>
+    <title>Install python &#8212; Open Image Data Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Install python" href="install_python.html" />
-    <link rel="prev" title="Open Research Data" href="../explanations/open_research_data/open_research_data_intro.html" />
+    <link rel="next" title="Making your package available on conda-forge" href="conda_forge_packaging.html" />
+    <link rel="prev" title="How-tos introduction" href="how_tos_introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -170,13 +170,13 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_tos_introduction.html">
    How-tos introduction
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="install_python.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Install python
   </a>
  </li>
@@ -275,7 +275,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Fhow_tos/how_tos_introduction.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Fhow_tos/install_python.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -303,7 +303,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/how_tos/how_tos_introduction.md"
+        <a href="../_sources/how_tos/install_python.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -363,13 +363,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#managing-and-installing-python">
-   Managing and installing python
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#packaging">
-   Packaging
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
   </a>
  </li>
 </ul>
@@ -381,7 +381,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How-tos introduction</h1>
+                <h1>Install python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -392,13 +392,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#managing-and-installing-python">
-   Managing and installing python
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#packaging">
-   Packaging
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
   </a>
  </li>
 </ul>
@@ -411,18 +411,122 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="how-tos-introduction">
-<h1>How-tos introduction<a class="headerlink" href="#how-tos-introduction" title="Permalink to this headline">#</a></h1>
-<p>How-to’s are short documentation that teach how to perform a specific task.</p>
-<section id="managing-and-installing-python">
-<h2>Managing and installing python<a class="headerlink" href="#managing-and-installing-python" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="packaging">
-<h2>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">#</a></h2>
-<p>Packaging is the process of making your software installable so that it can be distributed to users. When you have made a library or pipeline that you would like to share with the community, you will have to package it so that others can easily download and install it. Here, we will focus on python, as it is one of the most common languages for image processing and data science.  For more in-depth information, see the excellent <a class="reference external" href="https://packaging.python.org/en/latest/">Python Packaging User Guide</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="install-python">
+<h1>Install python<a class="headerlink" href="#install-python" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<p>This how-to teaches how to install python on your computer using <code class="docutils literal notranslate"><span class="pre">mambaforge</span></code>. <code class="docutils literal notranslate"><span class="pre">mambaforge</span></code> is a python distribution pre-installed with the <a class="reference external" href="https://mamba.readthedocs.io/en/latest/index.html"><code class="docutils literal notranslate"><span class="pre">mamba</span></code>package manager</a> and pre-configured to use the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel. I generally recommend installing this route, as I find it to be the most straight forward and I prefer to use <code class="docutils literal notranslate"><span class="pre">mamba</span></code> over <code class="docutils literal notranslate"><span class="pre">conda</span></code>, as it is much faster.</p>
+<p><strong>Prerequisites</strong></p>
 <ul class="simple">
-<li><p>Making your package available on conda-forge</p></li>
+<li><p>You have a computer with linux, MacOS, or Windows installed</p></li>
 </ul>
+<p><strong>Related reading</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mamba.readthedocs.io/en/latest/index.html">mamba documentation</a></p></li>
+</ul>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<p>Select the installation instructions for your operating system and processor from the tabs below.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="27d2c3b5-8892-4134-9fac-36ed300ed71e" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
+</input><label class="sd-tab-label" for="27d2c3b5-8892-4134-9fac-36ed300ed71e">
+Linux</label><div class="sd-tab-content docutils">
+<ol>
+<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
+<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-Linux-x86_64</span></code>.</p></li>
+<li><p>Open your terminal application</p></li>
+<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+</pre></div>
+</div>
+</li>
+<li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-Linux-x86_64.sh
+</pre></div>
+</div>
+</li>
+<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
+<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
+<div class="admonition-don-t-see-base admonition">
+<p class="admonition-title">Don’t see (base)?</p>
+<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<input id="d414c4ea-7024-40f3-81dd-6173dc9a6b03" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
+</input><label class="sd-tab-label" for="d414c4ea-7024-40f3-81dd-6173dc9a6b03">
+Mac OS (Intel)</label><div class="sd-tab-content docutils">
+<ol>
+<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
+<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-x86_64</span></code>.</p></li>
+<li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
+<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+</pre></div>
+</div>
+</li>
+<li><p>Execute the installer with the command below.  You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-x86_64.sh
+</pre></div>
+</div>
+</li>
+<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
+<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
+<div class="admonition-don-t-see-base admonition">
+<p class="admonition-title">Don’t see (base)?</p>
+<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<input id="0d297ef9-a8d2-4b42-b29c-b4525a698f51" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
+</input><label class="sd-tab-label" for="0d297ef9-a8d2-4b42-b29c-b4525a698f51">
+Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
+<ol>
+<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
+<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-arm64</span></code>.</p></li>
+<li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
+<li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+</pre></div>
+</div>
+</li>
+<li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read it/agree to it.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-arm64.sh
+</pre></div>
+</div>
+</li>
+<li><p>After installation, you will be asked if you would like to initialize your terminal with “conda init”. Enter “yes” to initalize your terminal.</p></li>
+<li><p>To verify your installation worked, close your Terminal window and open a new one. You should see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> to the left of your prompt.</p>
+<div class="admonition-don-t-see-base admonition">
+<p class="admonition-title">Don’t see (base)?</p>
+<p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<input id="4f461c52-8a63-4aa9-a1e0-962a82b82644" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
+</input><label class="sd-tab-label" for="4f461c52-8a63-4aa9-a1e0-962a82b82644">
+Windows</label><div class="sd-tab-content docutils">
+<ol class="simple">
+<li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
+<li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-Windows-x86_64</span></code>.</p></li>
+<li><p>Find the file you downloaded (Mambaforge-Windows-x86_64.exe) and double click to execute it. Follow the instructions to complete the installation.</p></li>
+<li><p>Once the installation has completed, you can verify it was correctly installed by searching for the “mambaforge prompt” in your Start menu.</p></li>
+</ol>
+</div>
+</div>
 </section>
 </section>
 
@@ -453,17 +557,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../explanations/open_research_data/open_research_data_intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="how_tos_introduction.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Open Research Data</p>
+            <p class="prev-next-title">How-tos introduction</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="install_python.html" title="next page">
+    <a class='right-next' id="next-link" href="conda_forge_packaging.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Install python</p>
+        <p class="prev-next-title">Making your package available on conda-forge</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
