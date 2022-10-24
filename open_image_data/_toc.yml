@@ -17,4 +17,5 @@ parts:
   - caption: How-tos
     chapters:
     - file: how_tos/how_tos_introduction
+    - file: how_tos/install_python
     - file: how_tos/conda_forge_packaging
