@@ -14,3 +14,7 @@ parts:
     chapters:
     - file: explanations/explanations_intro
     - file: explanations/open_research_data/open_research_data_intro
+  - caption: How-tos
+    chapters:
+    - file: how_tos/how_tos_introduction
+    - file: how_tos/conda_forge_packaging
