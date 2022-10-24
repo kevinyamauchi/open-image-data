@@ -2,14 +2,14 @@
 
 ## Overview
 
-This how-to teaches how to make your pypi installable with conda via `conda-forge`.
+This how-to teaches how to make your pypi package installable with conda via `conda-forge`. Distributing via `conda-forge` is useful as many people manage their python environments via `conda`. The method here is the most simple method I am aware of to make your package available via `conda-forge`. Packages with complicated or platform-specific dependencies will require some additional steps. For more in-depth information and a deeper dive, see the "Related reading" section below.
 
 **Prerequisites**
 
-- You have a package available on pypi that you want to make available on 
-- You have a github account
-- You know how to clone and push repositories with git
-- You have conda installed on your computer
+- You have a package available on pypi that you want to make available via `conda-forge`.
+- You have a github account.
+- You know how to clone and push repositories with git.
+- You have conda installed on your computer.
 
 
 **Related reading**
