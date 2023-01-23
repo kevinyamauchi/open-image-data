@@ -10,6 +10,9 @@ parts:
       sections:
       - file: tutorials/em/em_installation
       - file: tutorials/em/notebook_setup
+    - file: tutorials/napari/napari_tutorial_intro
+      sections:
+      - file: tutorials/napari/napari_installation
   - caption: Explanations
     chapters:
     - file: explanations/explanations_intro
