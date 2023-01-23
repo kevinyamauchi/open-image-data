@@ -146,6 +146,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../napari/napari_tutorial_intro.html">
+   Introduction to napari
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../napari/napari_installation.html">
+     Setting up your python environment
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -434,26 +451,26 @@ title="Print to PDF"
 </ul>
 </li>
 <li><p>We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named <code class="docutils literal notranslate"><span class="pre">em-napari</span></code>) from the environment file you downloaded in the first step, enter the following command. Replace <code class="docutils literal notranslate"><span class="pre">path/to/environment.yaml</span></code> with the path to the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file you downloaded in the first step. You can also drag and drop the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file into your terminal window to get the path.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba env create -f path/to/environment.yaml
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>path/to/environment.yaml
 </pre></div>
 </div>
 </li>
 <li><p>Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see <code class="docutils literal notranslate"><span class="pre">(em-napari)</span></code> to the left of your command prompt.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba activate em-napari
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>activate<span class="w"> </span>em-napari
 </pre></div>
 </div>
 </li>
 <li><p>If you are on a Mac or linux, please install these additional dependencies.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="556583f6-5136-485d-bb84-9b8515749414" name="a2216ce1-ee2d-4b4d-b609-c8d281990635" type="radio">
-</input><label class="sd-tab-label" for="556583f6-5136-485d-bb84-9b8515749414">
+<input checked="checked" id="fdef5076-7681-45f6-a858-588e2f41fb8f" name="7b1b9cd8-ecaa-4cc7-bf01-6a3a92b0261b" type="radio">
+</input><label class="sd-tab-label" for="fdef5076-7681-45f6-a858-588e2f41fb8f">
 Linux</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">ocl</span><span class="o">-</span><span class="n">icd</span><span class="o">-</span><span class="n">system</span>
 </pre></div>
 </div>
 </div>
-<input id="b0e555b1-dce4-46a5-bc7a-4e8f3c22dc10" name="a2216ce1-ee2d-4b4d-b609-c8d281990635" type="radio">
-</input><label class="sd-tab-label" for="b0e555b1-dce4-46a5-bc7a-4e8f3c22dc10">
+<input id="8bddadb5-5791-43f4-8de1-e407da9dca7b" name="7b1b9cd8-ecaa-4cc7-bf01-6a3a92b0261b" type="radio">
+</input><label class="sd-tab-label" for="8bddadb5-5791-43f4-8de1-e407da9dca7b">
 Mac OS</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">.</span><span class="n">app</span> <span class="n">ocl_icd_wrapper_apple</span>
 </pre></div>
@@ -462,7 +479,7 @@ Mac OS</label><div class="sd-tab-content docutils">
 </div>
 </li>
 <li><p>Test that your notebook installation is working. We will be using notebook for interactive analysis. Enter the command below and it should launch jupyter notebook book in a web browser. Once you’ve confirmed it launches, close the web browser and press ctrl+c in the terminal window to stop the notebook server.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
 </pre></div>
 </div>
 </li>

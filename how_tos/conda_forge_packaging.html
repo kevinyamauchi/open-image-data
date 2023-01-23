@@ -145,6 +145,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorials/napari/napari_tutorial_intro.html">
+   Introduction to napari
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/napari/napari_installation.html">
+     Setting up your python environment
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -449,32 +466,32 @@ title="Print to PDF"
 </li>
 <li><p>Clone your fork of the <code class="docutils literal notranslate"><span class="pre">staged-recipes</span></code> to your computer. Click the green “Code” button on the repository and copy the <code class="docutils literal notranslate"><span class="pre">git&#64;...</span></code> address. Then use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> command to clone the repository to the directory of your choosing.</p>
 <a class="reference internal image-reference" href="../_images/clone_repo_link.png"><img alt="confirm fork creation" class="align-center" src="../_images/clone_repo_link.png" style="width: 600px;" /></a>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone &lt;repo git address&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;repo<span class="w"> </span>git<span class="w"> </span>address&gt;
 </pre></div>
 </div>
 </li>
 <li><p>Create a conda environment to install <code class="docutils literal notranslate"><span class="pre">grayskull</span></code>, the utility for generating your conda build recipe. In your terminal, create a new environment called “grayskull”</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n grayskull
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>grayskull
 </pre></div>
 </div>
 </li>
 <li><p>After the environment creation finishes, activate your new “grayskull” environment.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda activate grayskull
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>grayskull
 </pre></div>
 </div>
 </li>
 <li><p>Install <code class="docutils literal notranslate"><span class="pre">grayskull</span></code> from the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge grayskull
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>grayskull
 </pre></div>
 </div>
 </li>
 <li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">recipes</span></code> directory of your <code class="docutils literal notranslate"><span class="pre">staged-recipes</span></code> fork that you cloned.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> path/to/staged-recipes/recipes
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>path/to/staged-recipes/recipes
 </pre></div>
 </div>
 </li>
 <li><p>Use grayskull to generate the recipe from your pypi python  package. Enter the command below in your terminal, replacing <code class="docutils literal notranslate"><span class="pre">&lt;pypi</span> <span class="pre">package</span> <span class="pre">name&gt;</span></code> with the name of your package (i.e., the name you use when you do <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;pypi</span> <span class="pre">package</span> <span class="pre">name&gt;</span></code>).</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> grayskull pypi --strict-conda-forge &lt;pypi package name&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span>grayskull<span class="w"> </span>pypi<span class="w"> </span>--strict-conda-forge<span class="w"> </span>&lt;pypi<span class="w"> </span>package<span class="w"> </span>name&gt;
 </pre></div>
 </div>
 </li>
@@ -532,16 +549,16 @@ extra:
 </li>
 <li><p>If you are satisfied with the recipe (generally this works for packages with out complicated-to-install dependencies (e.g., pytorch), you can now commit the change. The instructions below are assuming the package name is <code class="docutils literal notranslate"><span class="pre">napari-threedee</span></code>. Replace <code class="docutils literal notranslate"><span class="pre">napari-threedee</span></code> with the name of your package.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a new branch</span>
-git checkout -b add-napari-threedee
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>add-napari-threedee
 
 <span class="c1"># add the meta.yaml file</span>
-git add napari-threedee/meta.yaml
+git<span class="w"> </span>add<span class="w"> </span>napari-threedee/meta.yaml
 
 <span class="c1"># commit the new file</span>
-git commit -m <span class="s2">&quot;add the recipe for napari-threedee&quot;</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;add the recipe for napari-threedee&quot;</span>
 
 <span class="c1"># push the changes (change add-napari-threedee to your branch name)</span>
-git push --set-upstream origin add-napari-threedee
+git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>add-napari-threedee
 </pre></div>
 </div>
 </li>

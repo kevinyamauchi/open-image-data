@@ -146,6 +146,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorials/napari/napari_tutorial_intro.html">
+   Introduction to napari
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/napari/napari_installation.html">
+     Setting up your python environment
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -429,20 +446,20 @@ title="Print to PDF"
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <p>Select the installation instructions for your operating system and processor from the tabs below.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="27d2c3b5-8892-4134-9fac-36ed300ed71e" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
-</input><label class="sd-tab-label" for="27d2c3b5-8892-4134-9fac-36ed300ed71e">
+<input checked="checked" id="008df6ec-4807-44a4-a6fd-24dec4bfc528" name="2ded55c7-adb9-4e5f-aec7-ff6caa845cb8" type="radio">
+</input><label class="sd-tab-label" for="008df6ec-4807-44a4-a6fd-24dec4bfc528">
 Linux</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
 <li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-Linux-x86_64</span></code>.</p></li>
 <li><p>Open your terminal application</p></li>
 <li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Downloads
 </pre></div>
 </div>
 </li>
 <li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-Linux-x86_64.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>Mambaforge-Linux-x86_64.sh
 </pre></div>
 </div>
 </li>
@@ -451,27 +468,27 @@ Linux</label><div class="sd-tab-content docutils">
 <div class="admonition-don-t-see-base admonition">
 <p class="admonition-title">Don’t see (base)?</p>
 <p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init
 </pre></div>
 </div>
 </div>
 </li>
 </ol>
 </div>
-<input id="d414c4ea-7024-40f3-81dd-6173dc9a6b03" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
-</input><label class="sd-tab-label" for="d414c4ea-7024-40f3-81dd-6173dc9a6b03">
+<input id="e22970a7-fdef-47e2-af46-c9d787c60d88" name="2ded55c7-adb9-4e5f-aec7-ff6caa845cb8" type="radio">
+</input><label class="sd-tab-label" for="e22970a7-fdef-47e2-af46-c9d787c60d88">
 Mac OS (Intel)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
 <li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-x86_64</span></code>.</p></li>
 <li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
 <li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Downloads
 </pre></div>
 </div>
 </li>
 <li><p>Execute the installer with the command below.  You can use your arrow keys to scroll up and down to read the license agreement and enter “yes” if you agree.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-x86_64.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>Mambaforge-MacOSX-x86_64.sh
 </pre></div>
 </div>
 </li>
@@ -480,27 +497,27 @@ Mac OS (Intel)</label><div class="sd-tab-content docutils">
 <div class="admonition-don-t-see-base admonition">
 <p class="admonition-title">Don’t see (base)?</p>
 <p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init
 </pre></div>
 </div>
 </div>
 </li>
 </ol>
 </div>
-<input id="0d297ef9-a8d2-4b42-b29c-b4525a698f51" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
-</input><label class="sd-tab-label" for="0d297ef9-a8d2-4b42-b29c-b4525a698f51">
+<input id="028f1fe5-1ae1-458e-a7f3-92ce69b3d4dc" name="2ded55c7-adb9-4e5f-aec7-ff6caa845cb8" type="radio">
+</input><label class="sd-tab-label" for="028f1fe5-1ae1-458e-a7f3-92ce69b3d4dc">
 Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
 <li><p>Scroll down to the “Mambaforge” header of the “Downloads” section. Click the link to download link for <code class="docutils literal notranslate"><span class="pre">Mambaforge-MacOSX-arm64</span></code>.</p></li>
 <li><p>Open your Terminal (you can search for it in spotlight - <code class="docutils literal notranslate"><span class="pre">cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">space</span></code>)</p></li>
 <li><p>Navigate to the folder you downloaded the installer to (usually this is in your Downloads folder). If the file was downloaded to your Downloads folder, you would enter:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/Downloads
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Downloads
 </pre></div>
 </div>
 </li>
 <li><p>Execute the installer with the command below. You can use your arrow keys to scroll up and down to read it/agree to it.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash Mambaforge-MacOSX-arm64.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>Mambaforge-MacOSX-arm64.sh
 </pre></div>
 </div>
 </li>
@@ -509,15 +526,15 @@ Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 <div class="admonition-don-t-see-base admonition">
 <p class="admonition-title">Don’t see (base)?</p>
 <p>You can manually initialize conda by entering the command below and re-opening your terminal application.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>init
 </pre></div>
 </div>
 </div>
 </li>
 </ol>
 </div>
-<input id="4f461c52-8a63-4aa9-a1e0-962a82b82644" name="fe0ba956-3126-4553-927f-b80b913116c3" type="radio">
-</input><label class="sd-tab-label" for="4f461c52-8a63-4aa9-a1e0-962a82b82644">
+<input id="1f75cf77-bd58-43e8-8668-5c7e08d4ed73" name="2ded55c7-adb9-4e5f-aec7-ff6caa845cb8" type="radio">
+</input><label class="sd-tab-label" for="1f75cf77-bd58-43e8-8668-5c7e08d4ed73">
 Windows</label><div class="sd-tab-content docutils">
 <ol class="simple">
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
