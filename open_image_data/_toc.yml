@@ -13,6 +13,8 @@ parts:
     - file: tutorials/napari/napari_tutorial_intro
       sections:
       - file: tutorials/napari/napari_installation
+      - file: tutorials/napari/napari_notebook_setup
+      - file: tutorials/napari/make_a_simple_plugin
   - caption: Explanations
     chapters:
     - file: explanations/explanations_intro
