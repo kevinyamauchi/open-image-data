@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction to napari &#8212; Open Image Data Handbook</title>
+    <title>Setting up your python environment &#8212; Open Image Data Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Setting up your python environment" href="napari_installation.html" />
-    <link rel="prev" title="Downloading and launching the notebooks" href="../em/notebook_setup.html" />
+    <link rel="next" title="Downloading and launching the notebooks" href="napari_plugin_notebook_setup.html" />
+    <link rel="prev" title="Introduction to napari plugins" href="napari_plugin_tutorial_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -146,55 +146,55 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../napari/napari_tutorial_intro.html">
    Introduction to napari
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="napari_installation.html">
+    <a class="reference internal" href="../napari/napari_installation.html">
      Setting up your python environment
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="napari_notebook_setup.html">
+    <a class="reference internal" href="../napari/napari_notebook_setup.html">
      Downloading and launching the notebooks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="make_a_simple_plugin.html">
+    <a class="reference internal" href="../napari/make_a_simple_plugin.html">
      Creating a napari plugin
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../napari_plugins/napari_plugin_tutorial_intro.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="napari_plugin_tutorial_intro.html">
    Introduction to napari plugins
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../napari_plugins/napari_plugin_installation.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Setting up your python environment
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../napari_plugins/napari_plugin_notebook_setup.html">
+    <a class="reference internal" href="napari_plugin_notebook_setup.html">
      Downloading and launching the notebooks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../napari_plugins/make_a_simple_plugin.html">
+    <a class="reference internal" href="make_a_simple_plugin.html">
      Creating a napari plugin
     </a>
    </li>
@@ -329,7 +329,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/napari/napari_tutorial_intro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kevinyamauchi/Open Image Data Handbook/issues/new?title=Issue%20on%20page%20%2Ftutorials/napari_plugins/napari_plugin_installation.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -357,7 +357,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/tutorials/napari/napari_tutorial_intro.md"
+        <a href="../../_sources/tutorials/napari_plugins/napari_plugin_installation.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -417,23 +417,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#installing-python-via-mambaforge">
+   Installing python via mambaforge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-tutorial-setup">
-   Pre-tutorial setup
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorial-instructions">
-   Tutorial instructions
+  <a class="reference internal nav-link" href="#setting-up-your-environment">
+   Setting up your environment
   </a>
  </li>
 </ul>
@@ -445,7 +435,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to napari</h1>
+                <h1>Setting up your python environment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -456,23 +446,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#installing-python-via-mambaforge">
+   Installing python via mambaforge
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pre-tutorial-setup">
-   Pre-tutorial setup
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutorial-instructions">
-   Tutorial instructions
+  <a class="reference internal nav-link" href="#setting-up-your-environment">
+   Setting up your environment
   </a>
  </li>
 </ul>
@@ -485,48 +465,69 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-napari">
-<h1>Introduction to napari<a class="headerlink" href="#introduction-to-napari" title="Permalink to this headline">#</a></h1>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>This tutorial shows how to perform and analyze image segmentations in volume Focused Ion Beam Scanning Electron Microscopy (FIBSEM) data. This workshop will take you through the basics of bioimage analysis in Python and <a class="reference external" href="https://www.napari.org">napari</a>. We will be performing some analysis on segmented mitochondria using a combination of <a class="reference external" href="https://www.napari.org"><code class="docutils literal notranslate"><span class="pre">napari</span></code></a>, <a class="reference external" href="https://empanada.readthedocs.io/en/latest/empanada-napari.html"><code class="docutils literal notranslate"><span class="pre">empanada</span></code></a>, and <a class="reference external" href="https://github.com/BiAPoL/napari-clusters-plotter"><code class="docutils literal notranslate"><span class="pre">napari-clusters-plotter</span></code></a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="setting-up-your-python-environment">
+<h1>Setting up your python environment<a class="headerlink" href="#setting-up-your-python-environment" title="Permalink to this headline">#</a></h1>
+<p><strong>Note:</strong> If you have any issues with installation, please feel free to write us a message on the <a class="reference external" href="https://napari.zulipchat.com/#narrow/stream/212875-general">napari zulip</a> and we will try to help you get unstuck.</p>
+<section id="installing-python-via-mambaforge">
+<h2>Installing python via mambaforge<a class="headerlink" href="#installing-python-via-mambaforge" title="Permalink to this headline">#</a></h2>
+<p>In this tutorial, we will install python via mambaforge, a distribution of anaconda python. However, if you already have anaconda, miniconda, mambaforge, or miniforge installed, those will work as well and you can skip to the next section.</p>
+<p>To install python via mambaforge, follow the instructions <a class="reference internal" href="../../how_tos/install_python.html"><span class="doc std std-doc">here</span></a>.</p>
 </section>
-<section id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">#</a></h2>
-<p>The aim of this workshop is to provide an introduction to bioimage analysis in Python and <code class="docutils literal notranslate"><span class="pre">napari</span></code>. By the end of the workshop you should be able to</p>
+<section id="setting-up-your-environment">
+<h2>Setting up your environment<a class="headerlink" href="#setting-up-your-environment" title="Permalink to this headline">#</a></h2>
+<div class="admonition-using-conda-instead-of-mamba admonition">
+<p class="admonition-title">Using conda instead of mamba?</p>
+<p>The following assumes that you have installed python using Mambaforge as <a class="reference internal" href="../napari/napari_installation.html#content-references-napari-python-installation"><span class="std std-ref">described above</span></a>. If you are using a pre-existing installation of python via anaconda, miniconda, or miniforge, you can simply replace the <code class="docutils literal notranslate"><span class="pre">mamba</span></code> commands with <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
+</div>
+<ol>
+<li><p>Open your terminal.</p>
 <ul class="simple">
-<li><p>use napari as an image viewer</p></li>
-<li><p>perform interactive analysis with napari in a <a class="reference external" href="https://jupyter.org/">jupyter notebook</a></p></li>
-<li><p>make use of the <a class="reference external" href="https://www.napari-hub.org/">napari plugin ecosystem</a></p></li>
-<li><p>make a simple napari plugin</p></li>
-</ul>
-</section>
-<section id="pre-tutorial-setup">
-<h2>Pre-tutorial setup<a class="headerlink" href="#pre-tutorial-setup" title="Permalink to this headline">#</a></h2>
-<p>So that we can best utilize our time together, please do the following before arriving at the tutorial:</p>
-<ol class="simple">
-<li><p>Install napari and dependencies. Instructions <a class="reference internal" href="napari_installation.html"><span class="doc std std-doc">here</span></a>.</p></li>
-<li><p>Download the notebooks. Instructions <a class="reference internal" href="napari_notebook_setup.html"><span class="doc std std-doc">here</span></a>.</p></li>
-</ol>
-</section>
-<section id="tutorial-instructions">
-<h2>Tutorial instructions<a class="headerlink" href="#tutorial-instructions" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p>Do the introduction to viewing images in napari (<code class="docutils literal notranslate"><span class="pre">part_0_viewer_intro.ipynb</span></code>).</p></li>
-<li><p>Visualize and explore IMC data</p></li>
-<li><p>Segment and measure mitochondria using the cellpose plugin (<code class="docutils literal notranslate"><span class="pre">part_1_segment_and_analyze_mitochondria.ipynb</span></code>).</p></li>
-<li><p>Perform spot detection using your own spot detection function. There are 3 versions of this tutorial (see description below). They all cover the same content, they just require more or less coding depending on experience level.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">part_3_spot_detection_tutorial_beginner.ipynb</span></code>: this is the activity notebook for people new to image processing with python</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">part_3_spot_detection_tutorial_advanced.ipynb</span></code>: this is the activity notebook for people with experience performing image processing with python</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">part_3_spot_detection_tutorial_solution.ipynb</span></code>: this is the solution to the activity.</p></li>
+<li><p><strong>Windows</strong>: Open the “miniforge prompt” from your start menu</p></li>
+<li><p><strong>Mac OS</strong>: Open Terminal (you can search for it in spotlight - cmd + space)</p></li>
+<li><p><strong>Linux</strong>: Open your terminal application</p></li>
 </ul>
 </li>
-<li><p>(optional) Turn your spot detection function into a napari plugin. Instructions <a class="reference internal" href="make_a_simple_plugin.html"><span class="doc std std-doc">here</span></a>.</p></li>
+<li><p>We use an environment to encapsulate the python tools used for this workshop. This ensures that the requirements for this workshop do not interfere with your other python projects. To create the environment (named <code class="docutils literal notranslate"><span class="pre">napari-tutorial</span></code>), enter the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>napari-tutorial<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</pre></div>
+</div>
+</li>
+<li><p>Once the environment setup has finished, activate the environment. If you successfully activated the environment, you should now see <code class="docutils literal notranslate"><span class="pre">(napari-tutorial)</span></code> to the left of your command prompt.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>activate<span class="w"> </span>napari-tutorial
+</pre></div>
+</div>
+</li>
+<li><p>Install the dependencies with the commands below</p>
+<p><strong>If you’re on an M1/2 Mac</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>notebook<span class="w"> </span>napari
+pip<span class="w"> </span>install<span class="w"> </span>cookiecutter<span class="w"> </span>magicgui<span class="w"> </span>napari-clusters-plotter
+pip<span class="w"> </span>install<span class="w"> </span>stardist-napari
+</pre></div>
+</div>
+<p>Other systems:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>notebook
+pip<span class="w"> </span>install<span class="w"> </span>cookiecutter<span class="w"> </span>magicgui<span class="w"> </span><span class="s2">&quot;napari[all]&quot;</span><span class="w"> </span>napari-clusters-plotter
+pip<span class="w"> </span>install<span class="w"> </span>stardist-napari
+</pre></div>
+</div>
+</li>
+<li><p>If you are on a Mac, please install this one additional dependency.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mamba</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">.</span><span class="n">app</span>
+</pre></div>
+</div>
+</li>
+<li><p>Test that your notebook installation is working. We will be using notebook for interactive analysis. Enter the command below and it should launch jupyter notebook book in a web browser. Once you’ve confirmed it launches, close the web browser and press ctrl+c in the terminal window to stop the notebook server.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+</li>
+<li><p>Test your napari installation. Enter the command below and an empty napari viewer should open. You can close the window after it opens. Please note that it takes a bit of extra time to launch napari the first time.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>napari
+</pre></div>
+</div>
+</li>
 </ol>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -542,7 +543,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./tutorials/napari"
+            path: "./tutorials/napari_plugins"
         },
         predefinedOutput: true
     }
@@ -556,17 +557,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../em/notebook_setup.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="napari_plugin_tutorial_intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Downloading and launching the notebooks</p>
+            <p class="prev-next-title">Introduction to napari plugins</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="napari_installation.html" title="next page">
+    <a class='right-next' id="next-link" href="napari_plugin_notebook_setup.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Setting up your python environment</p>
+        <p class="prev-next-title">Downloading and launching the notebooks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

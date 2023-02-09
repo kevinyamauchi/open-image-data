@@ -173,6 +173,33 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorials/napari_plugins/napari_plugin_tutorial_intro.html">
+   Introduction to napari plugins
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/napari_plugins/napari_plugin_installation.html">
+     Setting up your python environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/napari_plugins/napari_plugin_notebook_setup.html">
+     Downloading and launching the notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/napari_plugins/make_a_simple_plugin.html">
+     Creating a napari plugin
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -456,8 +483,8 @@ title="Print to PDF"
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <p>Select the installation instructions for your operating system and processor from the tabs below.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="98224416-f129-4c98-a95d-6d96f27f928e" name="ec5f6988-4e5f-4b90-9d97-432e2d170681" type="radio">
-</input><label class="sd-tab-label" for="98224416-f129-4c98-a95d-6d96f27f928e">
+<input checked="checked" id="b2457d9b-0ff9-4fb1-bdf1-fbb7a3202a9f" name="1baafae4-e809-473f-9e76-c844c1a8fadd" type="radio">
+</input><label class="sd-tab-label" for="b2457d9b-0ff9-4fb1-bdf1-fbb7a3202a9f">
 Linux</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -485,8 +512,8 @@ Linux</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="aad98e86-ca93-481a-9532-e32aaafd2f08" name="ec5f6988-4e5f-4b90-9d97-432e2d170681" type="radio">
-</input><label class="sd-tab-label" for="aad98e86-ca93-481a-9532-e32aaafd2f08">
+<input id="a7a67f12-d4b9-4408-baa0-d164cedd7b1c" name="1baafae4-e809-473f-9e76-c844c1a8fadd" type="radio">
+</input><label class="sd-tab-label" for="a7a67f12-d4b9-4408-baa0-d164cedd7b1c">
 Mac OS (Intel)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -514,8 +541,8 @@ Mac OS (Intel)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="6263cb61-53ed-488a-8661-9838e64a5cbd" name="ec5f6988-4e5f-4b90-9d97-432e2d170681" type="radio">
-</input><label class="sd-tab-label" for="6263cb61-53ed-488a-8661-9838e64a5cbd">
+<input id="31580619-802a-4109-af3d-16fbd25fd8cd" name="1baafae4-e809-473f-9e76-c844c1a8fadd" type="radio">
+</input><label class="sd-tab-label" for="31580619-802a-4109-af3d-16fbd25fd8cd">
 Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 <ol>
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -543,8 +570,8 @@ Mac OS (M1/M2)</label><div class="sd-tab-content docutils">
 </li>
 </ol>
 </div>
-<input id="13fdd671-03e7-498c-b2c1-f13e5deed2af" name="ec5f6988-4e5f-4b90-9d97-432e2d170681" type="radio">
-</input><label class="sd-tab-label" for="13fdd671-03e7-498c-b2c1-f13e5deed2af">
+<input id="9b956cc2-6b69-4084-9bbb-7eafcb4391a0" name="1baafae4-e809-473f-9e76-c844c1a8fadd" type="radio">
+</input><label class="sd-tab-label" for="9b956cc2-6b69-4084-9bbb-7eafcb4391a0">
 Windows</label><div class="sd-tab-content docutils">
 <ol class="simple">
 <li><p>In your web browser, navigate to the <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge page</a>.</p></li>
@@ -569,7 +596,7 @@ Windows</label><div class="sd-tab-content docutils">
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./how_tos"
         },
         predefinedOutput: true
