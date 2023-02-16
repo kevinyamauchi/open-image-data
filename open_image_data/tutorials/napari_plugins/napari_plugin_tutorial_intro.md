@@ -28,4 +28,6 @@ So that we can best utilize our time together, please do the following before ar
     - `part_2_spot_detection_tutorial_advanced.ipynb`: this is the activity notebook for people with experience performing image processing with python
     - `part_2_spot_detection_tutorial_solution.ipynb`: this is the solution to the activity.
 5. Turn your spot detection function into a napari plugin. Instructions [here](./make_a_simple_plugin.md).
-6. Extend your plugin (ideas here) or make your own napari plugin.
+6. Extend the plugin you must made (some ideas below) or make your own napari plugin.
+    - Add a [sample data plugin](https://napari.org/stable/plugins/contributions.html#contributions-sample-data) to provide images of the nuclei and spots
+    - Add a plugin that takes a nuclei segmentation and the detected spots and assigns each spot to the nearest nucleus. Hint: you can [color points by a feature value](https://github.com/napari/napari/blob/main/examples/add_points_with_features.py) (e.g., the assigned nucleus).
