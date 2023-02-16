@@ -522,7 +522,12 @@ title="Print to PDF"
 </ul>
 </li>
 <li><p>Turn your spot detection function into a napari plugin. Instructions <a class="reference internal" href="make_a_simple_plugin.html"><span class="doc std std-doc">here</span></a>.</p></li>
-<li><p>Extend your plugin (ideas here) or make your own napari plugin.</p></li>
+<li><p>Extend the plugin you must made (some ideas below) or make your own napari plugin.</p>
+<ul class="simple">
+<li><p>Add a <a class="reference external" href="https://napari.org/stable/plugins/contributions.html#contributions-sample-data">sample data plugin</a> to provide images of the nuclei and spots</p></li>
+<li><p>Add a plugin that takes a nuclei segmentation and the detected spots and assigns each spot to the nearest nucleus. Hint: you can <a class="reference external" href="https://github.com/napari/napari/blob/main/examples/add_points_with_features.py">color points by a feature value</a> (e.g., the assigned nucleus).</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <div class="toctree-wrapper compound">
