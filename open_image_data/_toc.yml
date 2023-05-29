@@ -20,6 +20,11 @@ parts:
       - file: tutorials/napari_plugins/napari_plugin_installation
       - file: tutorials/napari_plugins/napari_plugin_notebook_setup
       - file: tutorials/napari_plugins/make_a_simple_plugin
+    - file: tutorials/neubias_plugins/neubias_plugin_tutorial_intro
+      sections:
+      - file: tutorials/neubias_plugins/neubias_plugin_installation
+      - file: tutorials/neubias_plugins/neubias_plugin_notebook_setup
+      - file: tutorials/neubias_plugins/make_a_simple_plugin
   - caption: Explanations
     chapters:
     - file: explanations/explanations_intro
