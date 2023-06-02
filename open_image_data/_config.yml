@@ -32,6 +32,14 @@ repository:
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# license footer from: https://github.com/haesleinhuepf/BioImageAnalysisNotebooks/blob/6250ff8c58ba7fef7d2a50b1c95e00fa7fb95b56/docs/_config.yml#L28-L38
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_footer: |
+    <p>
+    All material licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a> unless mentioned otherwise.
+    </p>
+sphinx:
+  config:
+    html_show_copyright: false
