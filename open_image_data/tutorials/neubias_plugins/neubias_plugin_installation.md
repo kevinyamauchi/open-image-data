@@ -37,7 +37,7 @@ The following assumes that you have installed python using Mambaforge as [descri
 	**If you're on an M1/2 Mac**:
 
 	```bash
-	mamba install -c conda-forge notebook napari
+	mamba install -c conda-forge notebook napari pyqt
 	pip install cookiecutter magicgui
 	```
 
