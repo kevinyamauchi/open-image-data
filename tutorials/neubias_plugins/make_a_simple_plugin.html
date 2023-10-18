@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -348,10 +358,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -359,7 +369,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -527,15 +537,11 @@ You can also use <a class="reference external" href="https://docs.google.com/pre
     <span class="kn">import</span> <span class="nn">napari</span>
 </pre></div>
 </div>
-<ul class="simple">
+<ul>
 <li><p>Next, you see three different ways to add widgets to napari.</p>
 <ol class="arabic simple">
-<li><p>The first subclasses <code class="docutils literal notranslate"><span class="pre">QWidget</span></code> directly. This option provides
-maximum flexibility, but means you have to take care of adding all the different GUI elements, laying them out, and hooking them
-up to the viewer.</p></li>
+<li><p>The first subclasses <code class="docutils literal notranslate"><span class="pre">QWidget</span></code> directly. This option provides maximum flexibility, but means you have to take care of adding all the different GUI elements, laying them out, and hooking them up to the viewer.</p></li>
 </ol>
-</li>
-</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ExampleQWidget</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span>
     <span class="c1"># your QWidget.__init__ can optionally request the napari viewer instance</span>
     <span class="c1"># in one of two ways:</span>
@@ -555,17 +561,17 @@ up to the viewer.</p></li>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;napari has&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">viewer</span><span class="o">.</span><span class="n">layers</span><span class="p">),</span> <span class="s2">&quot;layers&quot;</span><span class="p">)</span>    
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 2. The second option is to write a `magic_factory` decorated function. You might recognize this from our `intensify` widget in the lecture. With minimal extra work you can configure options for your GUI elements, such as min and max values for integers, or choices for dropdown boxes. See the [magicgui configuration docs](https://napari.org/magicgui/usage/configuration.html) for details on what you can configure in the decorator.
-</pre></div>
-</div>
+<ol class="arabic simple" start="2">
+<li><p>The second option is to write a <code class="docutils literal notranslate"><span class="pre">magic_factory</span></code> decorated function. You might recognize this from our <code class="docutils literal notranslate"><span class="pre">intensify</span></code> widget in the lecture. With minimal extra work you can configure options for your GUI elements, such as min and max values for integers, or choices for dropdown boxes. See the <a class="reference external" href="https://napari.org/magicgui/usage/configuration.html">magicgui configuration docs</a> for details on what you can configure in the decorator.</p></li>
+</ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@magic_factory</span>
 <span class="k">def</span> <span class="nf">example_magic_widget</span><span class="p">(</span><span class="n">img_layer</span><span class="p">:</span> <span class="s2">&quot;napari.layers.Image&quot;</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;you have selected </span><span class="si">{</span><span class="n">img_layer</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> 3. Finally, you see the what looks like just a plain function. We don&#39;t need complex GUI interactions for our plugin, and we don&#39;t want to have to lay out the GUI ourselves, so we will modify this to incorporate our `detect_spots` function.
-</pre></div>
-</div>
+<ol class="arabic simple" start="3">
+<li><p>Finally, you see the what looks like just a plain function. We don’t need complex GUI interactions for our plugin, and we don’t want to have to lay out the GUI ourselves, so we will modify this to incorporate our <code class="docutils literal notranslate"><span class="pre">detect_spots</span></code> function.</p></li>
+</ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uses the `autogenerate: true` flag in the plugin manifest</span>
 <span class="c1"># to indicate it should be wrapped as a magicgui to autogenerate</span>
 <span class="c1"># a widget.</span>
@@ -573,7 +579,7 @@ up to the viewer.</p></li>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;you have selected </span><span class="si">{</span><span class="n">img_layer</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
+</li>
 <li><p>Find the <code class="docutils literal notranslate"><span class="pre">Command</span></code> ID in <code class="docutils literal notranslate"><span class="pre">napari.yaml</span></code> that points to <code class="docutils literal notranslate"><span class="pre">example_function_widget</span></code>, and then find that <code class="docutils literal notranslate"><span class="pre">Command</span></code> ID in the
 <code class="docutils literal notranslate"><span class="pre">Widgets</span></code> contribution section. Note that unlike the other <code class="docutils literal notranslate"><span class="pre">widget</span></code> contributions, this one includes <code class="docutils literal notranslate"><span class="pre">autogenerate:</span> <span class="pre">true</span></code>.</p></li>
 </ul>
@@ -793,11 +799,10 @@ to look inside the <code class="docutils literal notranslate"><span class="pre">
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="neubias_plugin_notebook_setup.html"
@@ -817,10 +822,7 @@ to look inside the <code class="docutils literal notranslate"><span class="pre">
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -891,8 +893,8 @@ All material licensed <a href="https://creativecommons.org/licenses/by/4.0/" tar
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
